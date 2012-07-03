@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='viewport' content='width=device-width, maximum-scale=1.0' />
+
+    <title>Velocity Trendz</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-responsive.min.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/default.css' />
+    <link rel='stylesheet' type='text/css' href='css/style_common.css' />
+    <link rel='stylesheet' type='text/css' href='css/style1.css' />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script data-main='js/main' src='js/libs/require.js'></script>
+  </head>
+
+  <body>
+    <div id='header'></div>
+    <div id='content'></div>
+
+    <div class='push'></div>
+    <div id='footer'></div>
+
+    <div class='modal fade' id='modal-contact'>
+      <div class='modal-header'>
+        <a class='close' data-dismiss='modal'>×</a>
+        <h3>Contact me</h3>
+      </div>
+      <div class='modal-body'>
+        <form action='/do-something' method='post' class='form-horizontal'>
+          <div class='control-group'>
+            <label for='input-ctrl-name' class='control-label'>Name :</label>
+            <div class='controls'>
+              <input name='name' class='input-xlarge' id='input-ctrl-name' type='text'>
+            </div>
+          </div>
+          <div class='control-group'>
+            <label for='input-ctrl-email' class='control-label'>Email :</label>
+            <div class='controls'>
+              <input name='email' class='input-xlarge' id='input-ctrl-email' type='text'>
+            </div>
+          </div>
+          <div class='control-group'>
+            <label for='input-ctrl-message' class='control-label'>Message :</label>
+            <div class='controls'>
+              <textarea name='message' rows='5' class='input-xlarge' id='input-ctrl-message'></textarea>
+            </div>
+          </div>
+          <div class='control-group'>
+            <div class='controls'>
+              <button type='submit' class='btn'>Send</button>
+            </div>
+          </div>
+          <input type='hidden' name='submitted_form_contact' value='1'>
+        </form>
+      </div>
+    </div>
+
+    <div class='modal fade' id='modal-about'>
+      <div class="span5 block-title"><hr /><h1>About<a class='close' data-dismiss='modal'>×</a></h1><hr /></div>
+      <div class="span5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..</p>
+      </div>
+    </div>
+
+  </body>
+</html>
