@@ -18,7 +18,7 @@ define([
       this.$('.thumbnail > img').click(function()
       {
         window.localStorage['imgSrc'] = $(this).attr('src');
-        document.location.href='#product';
+        document.location.href = '#product';
       });
 
       return this;

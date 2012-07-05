@@ -13,7 +13,14 @@ define([
 
     render: function()
     {
-      this.$el.html(this.template());
+      var data = {
+        imgSrc: window.localStorage['imgSrc'],
+        related1: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg',
+        related2: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg',
+        related3: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg'
+      };
+
+      this.$el.html(this.template(data));
       return this;
     }
   });
