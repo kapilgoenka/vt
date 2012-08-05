@@ -12,8 +12,9 @@ define([
   'views/HomeView',
   'views/GalleryView',
   'views/ProductView',
-  'views/ContactUsView'
-], function(HeaderView, FooterView, HomeView, GalleryView, ProductView, ContactUsView)
+  'views/ContactUsView',
+  'views/AboutUsView'
+], function(HeaderView, FooterView, HomeView, GalleryView, ProductView, ContactUsView, AboutUsView)
 {
   var Router = Backbone.Router.extend(
   {
@@ -26,9 +27,12 @@ define([
 
       this.footerView = new FooterView({el: $('#footer')});
       this.footerView.render();
-      
-      this.contactUsView = new ContactUsView({el: $('#modal-contact')});
-      this.contactUsView.render();
+
+      this.contactUsView = new ContactUsView();
+      $('body').append(this.contactUsView.render().el);
+
+      this.aboutUsView = new AboutUsView();
+      $('body').append(this.aboutUsView.render().el);
     },
 
     routes:
