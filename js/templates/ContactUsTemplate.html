@@ -1,0 +1,32 @@
+<div class='modal-header'>
+  <a class='close' data-dismiss='modal'>×</a>
+  <h3>Contact me</h3>
+</div>
+<div class='modal-body'>
+  <form action='/do-something' method='post' class='form-horizontal'>
+    <div class='control-group'>
+      <label for='input-ctrl-name' class='control-label'>Name :</label>
+      <div class='controls'>
+        <input name='name' class='input-xlarge' id='input-ctrl-name' type='text'>
+      </div>
+    </div>
+    <div class='control-group'>
+      <label for='input-ctrl-email' class='control-label'>Email :</label>
+      <div class='controls'>
+        <input name='email' class='input-xlarge' id='input-ctrl-email' type='text'>
+      </div>
+    </div>
+    <div class='control-group'>
+      <label for='input-ctrl-message' class='control-label'>Message :</label>
+      <div class='controls'>
+        <textarea name='message' rows='5' class='input-xlarge' id='input-ctrl-message'></textarea>
+      </div>
+    </div>
+    <div class='control-group'>
+      <div class='controls'>
+        <button type='submit' class='btn'>Send</button>
+      </div>
+    </div>
+    <input type='hidden' name='submitted_form_contact' value='1'>
+  </form>
+</div>
