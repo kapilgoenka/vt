@@ -11,7 +11,7 @@ require.config({
     jQuery: 'libs/jquery-1.7.2',
     Underscore: 'libs/underscore-1.3.3',
     Backbone: 'libs/backbone-0.9.2',
-    MomentJS: 'libs/moment-1.6.2',
+    MomentJS: 'libs/moment-1.7.0',
     LessJS: 'libs/less-1.3.0',
     BootStrap: 'libs/bootstrap-2.0.4',
     CloudZoom: 'libs/cloud-zoom.1.0.2',
