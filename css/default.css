@@ -1,13 +1,12 @@
 body
 {
   font-family: 'Lato', sans-serif;
+  background: url(../img/bg.png)
 }
 
 #header
 {
-  position: fixed;
   width: 100%;
-  background: white;
   z-index: 100;
   left: 0;
 }
@@ -20,7 +19,6 @@ body
 #content
 {
   margin-bottom: 8px;
-  padding-top: 134px;
 }
 
 #header_upper
@@ -520,6 +518,7 @@ html, body
 .nav > li:hover {
 text-decoration: none;
 background-color: #EEE;
+border-bottom: 4px solid #F90;
 }
 
 ul.features-list {
