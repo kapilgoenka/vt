@@ -1,3 +1,10 @@
+.camera_wrap
+{
+  padding:10px;
+  background:#555;
+  border-radius:5px;
+}
+
 .view-first img
 {
   -webkit-transition: all 0.2s linear;

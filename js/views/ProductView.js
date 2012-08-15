@@ -13,6 +13,8 @@ define([
 
     render: function()
     {
+      var self = this;
+
       var data = {
         imgSrc: window.localStorage['imgSrc'],
         related1: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg',
@@ -21,10 +23,22 @@ define([
       };
 
       this.$el.html(this.template(data));
+      //this.$el.addClass('product-view');
+      
+      this.$('.thumbnail > img').click(function()
+      {
+        window.localStorage['imgSrc'] = $(this).attr('src');
+        self.render();
+      });
 
       var cloudZoomElement = document.getElementsByClassName('cloud-zoom')[0];
-      cloudZoomElement.innerHTML = '<img src=' + window.localStorage['imgSrc'] + ' width=556px />';
-      cloudZoomElement.href = window.localStorage['imgSrc'];
+      var selectedImg = window.localStorage['imgSrc'];
+      selectedImg = selectedImg.replace('.jpeg', '');
+      selectedImg = selectedImg.replace('img/', '');
+      selectedImg = 'img/old/' + selectedImg + '.jpeg';
+      console.log(selectedImg);
+      cloudZoomElement.innerHTML = '<img src=' + selectedImg + ' width=556px />';
+      cloudZoomElement.href = selectedImg;
 
       $('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
 

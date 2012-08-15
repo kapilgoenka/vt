@@ -517,8 +517,12 @@ html, body
 
 .nav > li:hover {
 text-decoration: none;
-background-color: #EEE;
-border-bottom: 4px solid #F90;
+border-bottom: 4px solid darkgrey;
+}
+
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color:transparent !important;
 }
 
 ul.features-list {
@@ -659,7 +663,7 @@ ul.testimonials-list img {
     display: inline-block;
     padding: 0 10px;
     margin: 0 10px;
-    height: 52px;
+    height: 42px;
   }
 
   #header_menu li a

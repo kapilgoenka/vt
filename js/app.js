@@ -25,14 +25,14 @@ define([
       this.headerView = new HeaderView({el: $('#header')});
       this.headerView.render();
 
-      this.footerView = new FooterView({el: $('#footer')});
+      this.footerView = new FooterView({el: $('.footer')});
       this.footerView.render();
 
-      this.contactUsView = new ContactUsView();
+      /*this.contactUsView = new ContactUsView();
       $('body').append(this.contactUsView.render().el);
 
       this.aboutUsView = new AboutUsView();
-      $('body').append(this.aboutUsView.render().el);
+      $('body').append(this.aboutUsView.render().el);*/
     },
 
     routes:
