@@ -16,7 +16,8 @@ require.config({
     BootStrap: 'libs/bootstrap-2.0.4',
     CloudZoom: 'libs/cloud-zoom.1.0.2',
     Handlebars: 'libs/handlebars-1.0.0.beta.6',
-    jQueryEasing: 'libs/jquery.easing.1.3'
+    jQueryEasing: 'libs/jquery-easing-1.3',
+    CameraJS: 'libs/camera.min'
   }
 });
 
@@ -24,9 +25,15 @@ require(['jQuery', 'Underscore', 'Handlebars', 'MomentJS', 'LessJS'], function()
 {
   require(['Backbone', 'BootStrap', 'CloudZoom'], function()
   {
-    require(['app'], function(App)
+    require(['jQueryEasing'], function()
     {
-      App.initialize();
+      require(['CameraJS'], function()
+      {
+        require(['app'], function(App)
+        {
+          App.initialize();
+        });
+      });
     });
   });
 });
