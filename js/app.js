@@ -46,12 +46,14 @@ define([
     {
       this.homeView = new HomeView({el: $('#content')});
       this.homeView.render();
+      this.headerView.selectItem(0);
     },
 
     gallery_men: function()
     {
       this.galleryView = new GalleryView({el: $('#content')});
       this.galleryView.render();
+      this.headerView.selectItem(1);
     },
 
     product_page: function()
