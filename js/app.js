@@ -37,8 +37,9 @@ define([
 
     routes:
     {
-      '': 'index',
+      '': 'gallery_men',
       'men': 'gallery_men',
+      'about': 'about',
       'product': 'product_page'
     },
 
@@ -53,6 +54,13 @@ define([
     {
       this.galleryView = new GalleryView({el: $('#content')});
       this.galleryView.render();
+      this.headerView.selectItem(0);
+    },
+
+    about: function()
+    {
+      this.aboutUsView = new AboutUsView({el: $('#content')});
+      this.aboutUsView.render();
       this.headerView.selectItem(1);
     },
 

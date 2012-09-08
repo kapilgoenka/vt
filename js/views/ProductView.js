@@ -17,9 +17,9 @@ define([
 
       var data = {
         imgSrc: window.localStorage['imgSrc'],
-        related1: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg',
-        related2: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg',
-        related3: 'img/DSC_' + Math.floor(Math.random()*6) + '.jpeg'
+        related1: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG',
+        related2: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG',
+        related3: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG'
       };
 
       this.$el.html(this.template(data));
@@ -33,9 +33,9 @@ define([
 
       var cloudZoomElement = document.getElementsByClassName('cloud-zoom')[0];
       var selectedImg = window.localStorage['imgSrc'];
-      selectedImg = selectedImg.replace('.jpeg', '');
+      selectedImg = selectedImg.replace('.JPG', '');
       selectedImg = selectedImg.replace('img/', '');
-      selectedImg = 'img/old/' + selectedImg + '.jpeg';
+      selectedImg = 'img/old/' + selectedImg + '.JPG';
       console.log(selectedImg);
       cloudZoomElement.innerHTML = '<img src=' + selectedImg + ' width=556px />';
       cloudZoomElement.href = selectedImg;

@@ -26,7 +26,7 @@ define([
 
       // select the header at the given index
       this.$('#header_menu>li:nth-child(' + (index+1) + ')').css({
-        'border-bottom': '4px solid darkgrey'
+        'border-bottom': '4px solid #C46D3B'
       });
     }
   });
