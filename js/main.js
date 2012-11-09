@@ -21,19 +21,13 @@ require.config({
   }
 });
 
-require(['jQuery', 'Underscore', 'Handlebars', 'MomentJS', 'LessJS'], function()
+require(['jQuery', 'Underscore', 'Handlebars'], function()
 {
   require(['Backbone', 'BootStrap', 'CloudZoom'], function()
   {
-    require(['jQueryEasing'], function()
+    require(['app'], function(App)
     {
-      require(['CameraJS'], function()
-      {
-        require(['app'], function(App)
-        {
-          App.initialize();
-        });
-      });
+      App.initialize();
     });
   });
 });
