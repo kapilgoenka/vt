@@ -17,9 +17,9 @@ define([
 
       var data = {
         imgSrc: window.localStorage['imgSrc'],
-        related1: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG',
-        related2: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG',
-        related3: 'img/DSC_' + Math.floor(Math.random()*6) + '.JPG'
+        related1: 'img/DSC_' + Math.floor(Math.random()*14) + '.JPG',
+        related2: 'img/DSC_' + Math.floor(Math.random()*14) + '.JPG',
+        related3: 'img/DSC_' + Math.floor(Math.random()*14) + '.JPG'
       };
 
       this.$el.html(this.template(data));
